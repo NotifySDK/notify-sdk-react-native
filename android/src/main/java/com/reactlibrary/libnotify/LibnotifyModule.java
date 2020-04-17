@@ -1,11 +1,16 @@
 package com.reactlibrary.libnotify;
 
+import android.app.Activity;
+import android.app.Application;
 import android.text.TextUtils;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.facebook.react.BuildConfig;
+import com.facebook.react.ReactApplication;
+import com.facebook.react.ReactNativeHost;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.bridge.ReactContextBaseJavaModule;
 import com.facebook.react.bridge.ReactMethod;
@@ -21,6 +26,7 @@ import ru.mail.notify.core.api.BackgroundAwakeMode;
 import ru.mail.notify.core.api.NetworkSyncMode;
 
 public class LibnotifyModule extends ReactContextBaseJavaModule {
+    private static String LOG_TAG = "LibnotifyModule";
 
     public LibnotifyModule(@NonNull ReactApplicationContext reactContext) {
         super(reactContext);
@@ -153,8 +159,11 @@ public class LibnotifyModule extends ReactContextBaseJavaModule {
     @Override
     public void initialize() {
         super.initialize();
+
+        Log.i(LOG_TAG, "Initialize module...");
+
         //set optionally log receivers and enable debug mode with extended output
-        if (BuildConfig.DEBUG) {
+        if (isDebug()) {
             NotificationFactory.enableDebugMode();
             NotificationFactory.setLogReceiver(new NotifyLogReceiver());
         }
@@ -182,5 +191,24 @@ public class LibnotifyModule extends ReactContextBaseJavaModule {
 
         //optionally track some custom events (also async method call)
         NotificationFactory.get(getReactApplicationContext().getBaseContext()).collectEvent("AppStarted");
+    }
+
+    private boolean isDebug() {
+        final Activity currentActivity = getCurrentActivity();
+        if (currentActivity == null) {
+            Log.e(LOG_TAG, "Not found current activity while check debug");
+            return false;
+        }
+        final Application application = currentActivity.getApplication();
+        if (!(application instanceof ReactApplication)) {
+            Log.e(LOG_TAG, "Current application not ReactApplication");
+            return false;
+        }
+        final ReactNativeHost host = ((ReactApplication) application).getReactNativeHost();
+        if (host == null) {
+            Log.e(LOG_TAG, "ReactNativeHost is null");
+            return false;
+        }
+        return host.getUseDeveloperSupport();
     }
 }
