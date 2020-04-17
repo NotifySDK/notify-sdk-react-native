@@ -1,7 +1,8 @@
 # react-native-libnotify
 
-## Getting started
+## Install
 
+1) Add depend
 `$ npm install libnotify-rn --save`
 
 ### Mostly automatic installation
