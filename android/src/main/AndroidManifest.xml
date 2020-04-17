@@ -3,7 +3,7 @@
 
     <application>
         <service
-            android:name="com.reactlibrary.libnotify.LibnotifyGcmMessageHandlerService"
+            android:name=".LibnotifyGcmMessageHandlerService"
             android:exported="false">
             <intent-filter android:priority="99999">
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />

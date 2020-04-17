@@ -8,7 +8,7 @@ import java.util.Map;
 import ru.mail.libnotify.api.NotificationFactory;
 import ru.mail.notify.core.utils.FileLog;
 
-class LibnotifyGcmMessageHandlerService extends FirebaseMessagingService {
+public class LibnotifyGcmMessageHandlerService extends FirebaseMessagingService {
     private static final String LOG_TAG = "GcmMessageHandlerService";
 
     @Override
