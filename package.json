@@ -1,7 +1,7 @@
 {
   "name": "libnotify-rn",
   "title": "LibNotify by MRG for ReactNative",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Bridge for native iOS/Android library notify.mail.ru",
   "main": "index.js",
   "repository": {

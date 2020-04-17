@@ -1,0 +1,17 @@
+*.DS_Store
+.DS_Store
+*Thumbs.db
+.gradle
+.idea
+*.iml
+npm-debug.log
+node_modules
+/android/build
+/android/.idea
+/ios/**/*xcuserdata*
+/ios/**/*xcshareddata*
+
+# Adjust SDK
+ext/
+example/
+test/

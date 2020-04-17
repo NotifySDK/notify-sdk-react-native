@@ -2,15 +2,15 @@
 
 ## Getting started
 
-`$ npm install react-native-libnotify --save`
+`$ npm install libnotify-rn --save`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-libnotify`
+`$ react-native link libnotify-rn`
 
 ## Usage
 ```javascript
-import Libnotify from 'react-native-libnotify';
+import Libnotify from 'libnotify-rn';
 
 // TODO: What to do with the module?
 Libnotify;
