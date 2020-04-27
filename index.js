@@ -1,12 +1,10 @@
-import {
-    NativeEventEmitter,
-    NativeModules,
-    Platform,
-} from 'react-native';
+'use strict';
+
+import {NativeModules} from 'react-native';
 
 const module_notify = NativeModules.Notify;
 
-var Notify = {};
+const Notify = {};
 
 Notify.collectEvent = function (key, value = null, deliverImmediately = false, props = null) {
     if (value === null && props !== null) {
@@ -38,3 +36,5 @@ Notify.setProperty = function (key, value = null) {
     }
     module_notify.setProperty(key, value)
 }
+
+module.exports = {Notify}

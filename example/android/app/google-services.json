@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "51834010946",
+    "firebase_url": "https://symbolic-card-713.firebaseio.com",
+    "project_id": "symbolic-card-713",
+    "storage_bucket": "symbolic-card-713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:51834010946:android:cee2cc4ebea69f41",
+        "android_client_info": {
+          "package_name": "com.testtmp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "51834010946-hfpqjoarn6dil4151j8obrk0l0bnsca7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB2KuRC9UXjS-yCRKcA-KJv49mNEeQpLho"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

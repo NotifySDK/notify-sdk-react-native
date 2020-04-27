@@ -1,0 +1,17 @@
+{
+  "name": "test_tmp",
+  "displayName": "test_tmp",
+  "expo": {
+    "name": "test_tmp",
+    "slug": "test_tmp",
+    "version": "1.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}

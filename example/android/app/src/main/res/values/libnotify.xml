@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+        Request application id from notify.mail.ru web console or directly from notify API developers.
+    -->
+    <string name="libnotify_application_name">android-libnotify-app</string>
+    <!--
+        Use default notify.mail.ru Android GCM/Firebase project for push notification delivery
+        (this could be customized).
+    -->
+    <string name="libnotify_server_id">297109036349</string>
+    <!--
+        Provide an icon which could be used in libnotify notifications
+        (may be also configured in notify console).
+    -->
+    <string name="libnotify_resource_icon_id">mipmap/ic_launcher</string>
+    <!--
+        Provide a color which could be used in libnotify notifications
+         (may be also configured in notify console).
+    -->
+    <string name="libnotify_resource_color_id">color/colorPrimary</string>
+    <string name="libnotify_resource_contrast_color_id">color/colorContrast</string>
+
+    <!--
+        Default colors for libnotify landing (may be also configured in notify console)
+    -->
+    <string name="libnotify_resource_bg_color_id" translatable="false"/>
+    <string name="libnotify_resource_text_color_id" translatable="false"/>
+    <string name="libnotify_resource_button_color_id" translatable="false"/>
+    <string name="libnotify_resource_led_color_id" translatable="false"/>
+    <string name="libnotify_resource_close_color_id" translatable="false"/>
+
+    <!--
+        Application_id from Notify CRM. You can find it in app url path
+		Example: https://apinotify.mail.ru/#/apps/3
+		libnotify_application_id = 3
+    -->
+    <string name="libnotify_application_id">3</string>
+
+    <!--
+        Secret for app. You can find it in Application settings (in Notify CRM)
+    -->
+    <string name="libnotify_application_secret">21d848ed4e77710c6ce1b185bafbe4cb0f8ed5fc6aa51cf303c27b8099a8d104</string>
+
+    <!--
+            Default sound for libnotify (may be also configured in notify console)
+    -->
+    <string name="libnotify_resource_sound" translatable="false"/>
+</resources>

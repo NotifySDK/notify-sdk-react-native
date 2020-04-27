@@ -11,7 +11,5 @@ node_modules
 /ios/**/*xcuserdata*
 /ios/**/*xcshareddata*
 
-# Adjust SDK
-ext/
+# Notify SDK
 example/
-test/
